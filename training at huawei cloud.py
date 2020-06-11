@@ -76,16 +76,6 @@ class Net(nn.Module):
 
 
 def main():
-    """
-    session = Session()
-    session.download_data(bucket_path="/modelart-test-gmq/datas/cifar-10-batches-py/batches.meta", path="/home/ma-user/work/datas/cifar-10-batches-py/batches.meta")
-    session.download_data(bucket_path="/modelart-test-gmq/datas/cifar-10-batches-py/data_batch_1", path="/home/ma-user/work/datas/cifar-10-batches-py/data_batch_1")
-    session.download_data(bucket_path="/modelart-test-gmq/datas/cifar-10-batches-py/data_batch_2", path="/home/ma-user/work/datas/cifar-10-batches-py/data_batch_2")
-    session.download_data(bucket_path="/modelart-test-gmq/datas/cifar-10-batches-py/data_batch_3", path="/home/ma-user/work/datas/cifar-10-batches-py/data_batch_3")
-    session.download_data(bucket_path="/modelart-test-gmq/datas/cifar-10-batches-py/data_batch_4", path="/home/ma-user/work/datas/cifar-10-batches-py/data_batch_4")
-    session.download_data(bucket_path="/modelart-test-gmq/datas/cifar-10-batches-py/data_batch_5", path="/home/ma-user/work/datas/cifar-10-batches-py/data_batch_5")
-    session.download_data(bucket_path="/modelart-test-gmq/datas/cifar-10-batches-py/test_batch", path="/home/ma-user/work/datas/cifar-10-batches-py/test_batch")
-    """
 
     """precess 1 data loader"""
     trans1 = f_trs.Compose([f_trs.RandomHorizontalFlip(), f_trs.RandomCrop(size=32, padding=4),
